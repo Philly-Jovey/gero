@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About G'ADR Gerontology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-background text-on-background font-body-md overflow-x-hidden">
+    <header class="fixed top-0 z-50 w-full bg-surface shadow-sm relative">
+      <div class="flex justify-between items-center w-full px-4 py-3 max-w-container-max mx-auto md:px-8 md:py-4">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-fixed">
+            <span class="material-symbols-outlined">shield_with_heart</span>
+          </div>
+          <h1 class="font-headline-md text-headline-md text-primary">G'ADR Gerontology</h1>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center rounded-lg border border-outline/20 p-2 text-on-surface hover:bg-surface-container-high transition-colors" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <nav id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-surface shadow-lg border-t border-surface-container-high md:static md:flex md:shadow-none md:border-none md:bg-transparent px-4 py-4 md:px-0 md:py-0">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:gap-8 w-full">
+            <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200" href="index.html">Home</a>
+            <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200" href="training.html">Training</a>
+            <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Registration</a>
+            <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Payments</a>
+            <a class="font-body-lg text-body-lg text-secondary border-b-2 border-secondary pb-1" href="About.html">About Us</a>
+            <div class="flex items-center gap-4 md:hidden">
+              <span class="material-symbols-outlined text-primary cursor-pointer">search</span>
+              <button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-label-lg active:scale-95 transition-transform">Registration</button>
+            </div>
+          </div>
+        </nav>
+        <div class="hidden md:flex items-center gap-6">
+          <span class="material-symbols-outlined text-primary cursor-pointer">search</span>
+          <button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-label-lg active:scale-95 transition-transform">Registration</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-12 md:pt-24">
+          <section class="py-24 bg-surface">
+        <div class="max-w-container-max mx-auto px-gutter">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+              <div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+              <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                <img class="w-full h-[500px] object-cover object-[center_18%]" data-alt="Prof Phillip Ngete Buganda portrait" src="Images/Prof Phillip Ngete Buganda.jpeg" />
+              </div>
+            </div>
+            <div>
+              <h2 class="font-headline-lg text-headline-lg text-primary mb-6">A Mission Rooted in Care, Dignity, and Action</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                At G'ADR Gerontology, we believe aging should be a season of strength, relevance, and belonging. Our work supports older adults through specialized training, mediation, advocacy, and community-led initiatives that restore confidence and promote safer, healthier communities.
+              </p>
+              <div class="p-8 bg-surface-container rounded-xl border-l-4 border-secondary">
+                <h3 class="font-headline-md text-headline-md text-primary mb-4 italic">"Life after 50 is not a contraction—it is an expansion."</h3>
+                <p class="text-on-surface-variant italic">This is the philosophy behind our training and advocacy programs for elders, families, professionals, and communities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-container-max mx-auto px-gutter">
+          <div class="text-center mb-16">
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-4">The 4D Principles of Excellence</h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto">These guiding values shape how we train, serve, and advocate for older adults in every community.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-2xl flex flex-col items-center text-center hover:translate-y-[-8px] transition-transform duration-300">
+              <div class="w-16 h-16 bg-secondary-container/20 rounded-full flex items-center justify-center mb-6 text-secondary">
+                <span class="material-symbols-outlined text-4xl" data-weight="fill">favorite</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-primary mb-4">Desirous</h3>
+              <p class="text-on-surface-variant">A deep passion for continued relevance and meaningful contribution to society.</p>
+            </div>
+            <div class="bg-primary text-on-primary p-10 rounded-2xl flex flex-col items-center text-center shadow-xl hover:translate-y-[-8px] transition-transform duration-300">
+              <div class="w-16 h-16 bg-primary-fixed/20 rounded-full flex items-center justify-center mb-6 text-primary-fixed">
+                <span class="material-symbols-outlined text-4xl" data-weight="fill">ads_click</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md mb-4">Decided</h3>
+              <p class="opacity-80">Choosing renewed leadership, confidence, and purposeful action in later life.</p>
+            </div>
+            <div class="glass-card p-10 rounded-2xl flex flex-col items-center text-center hover:translate-y-[-8px] transition-transform duration-300">
+              <div class="w-16 h-16 bg-tertiary-fixed/20 rounded-full flex items-center justify-center mb-6 text-tertiary">
+                <span class="material-symbols-outlined text-4xl" data-weight="fill">fitness_center</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-primary mb-4">Determined</h3>
+              <p class="text-on-surface-variant">Resilience and courage in building a legacy that transcends generations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-secondary/5 -skew-x-12 translate-x-24"></div>
+        <div class="max-w-container-max mx-auto px-gutter relative z-10">
+          <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="material-symbols-outlined text-secondary text-3xl">public</span>
+                <h4 class="font-label-lg text-label-lg text-secondary uppercase tracking-widest">Community Advocacy</h4>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Working with communities, professionals, and institutions</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                Our mission is to strengthen understanding of gerontology and mediation so that older adults are protected, heard, and supported in a just and compassionate way.
+              </p>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-10">
+                Through partnerships with universities, professional leaders, and local stakeholders, G'ADR helps create an environment where wisdom is valued and the needs of older adults are addressed with practical solutions.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <div class="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-full text-primary font-label-md">
+                  <span class="material-symbols-outlined text-sm">verified</span>
+                  Research-informed learning
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-full text-primary font-label-md">
+                  <span class="material-symbols-outlined text-sm">verified</span>
+                  Professional training
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-2xl overflow-hidden h-64 shadow-lg">
+                  <img class="w-full h-full object-cover" data-alt="A diverse group of seniors and younger university students engaged in a vibrant community gardening project at Makerere University." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhRkZn3--Tmy9qe7d9BSVzo76NUDiX0prrW7dbW_Qh5NDVmnoR7oVuz-QyPoFjORYWCESp1sketZtFI13RJe69fG7VgCASagRzAJvISFlEVMK8sAKWGhQ8sRqF9Mwze2HFQubJIidr2v4zEdeCn0EgyUjcNjof2kCuyaXhjt7QZ60gfI4xCnHBu1_Y0J8GnkqtV9jgYNnKAcXgh0j5hnrqr2d1QQak0KIHgsftVyeP9GXTJvLaveJfpFLwKms7AYoyDApdKlC8T2A" />
+                </div>
+                <div class="rounded-2xl overflow-hidden h-64 shadow-lg mt-8">
+                  <img class="w-full h-full object-cover" data-alt="A close-up shot of two hands clasped together representing trust, mentorship, and intergenerational partnership." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgZGrdhHm9AMExEeFKsWWiBHKmGgJDFmFYzoM50ERRebpc0-ywn9NvATqWr__M71sA3vMrCAiA-HGauTmFBPtha-mJrD3Ru1LhtVswz29nOVY652m1r-Q3JGw-TbrK6SukVOqhRg7rLgnALQDkYJ4ua4OJAACLKxWhT0dhWye8fdLe85tvw_R5cp-CQ183V1qz8aJ-GzRJLTyL0jnJOLFqrr0t0nD9bmolxBCSK5066aA1iL1apo4-4El-wVozI85B9oWu0jVaK-M" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary py-32 text-white relative overflow-hidden">
+      <div class="absolute -right-24 -top-24 w-96 h-96 bg-secondary/20 blur-[100px] rounded-full"></div>
+      <div class="absolute -left-24 -bottom-24 w-96 h-96 bg-primary-container/40 blur-[100px] rounded-full"></div>
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+        <div class="max-w-3xl mx-auto text-center space-y-8">
+          <div class="flex flex-col items-center gap-4">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-4xl">shield_with_heart</span>
+              <h2 class="font-headline-lg text-headline-lg">G'ADR Gerontology</h2>
+            </div>
+            <p class="font-body-md max-w-lg opacity-80">Empowering wisdom, renewing purpose, and advocating for a dignified aging experience across Africa.</p>
+          </div>
+          <nav class="flex flex-wrap justify-center gap-8">
+            <a class="font-body-md text-white/80 hover:text-white underline transition-all focus:ring-3 ring-secondary rounded-sm px-1" href="#">Privacy Policy</a>
+            <a class="font-body-md text-white/80 hover:text-white underline transition-all focus:ring-3 ring-secondary rounded-sm px-1" href="#">Terms of Service</a>
+            <a class="font-body-md text-white/80 hover:text-white underline transition-all focus:ring-3 ring-secondary rounded-sm px-1" href="#">Makerere University</a>
+            <a class="font-body-md text-white/80 hover:text-white underline transition-all focus:ring-3 ring-secondary rounded-sm px-1" href="#">Contact Us</a>
+            <a class="font-body-md text-white/80 hover:text-white underline transition-all focus:ring-3 ring-secondary rounded-sm px-1" href="#">Resources</a>
+          </nav>
+          <div class="flex gap-6 mt-4 justify-center">
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors" href="#">
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors" href="#">
+              <span class="material-symbols-outlined">mail</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors" href="#">
+              <span class="material-symbols-outlined">call</span>
+            </a>
+          </div>
+          <p class="font-body-md opacity-80 mt-8">© 2026 G'ADR Gerontology. Empowering Wisdom, Renewing Purpose.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

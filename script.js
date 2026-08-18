@@ -118,4 +118,14 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileMenuButton.querySelector("span").textContent = expanded ? "menu" : "close";
     });
   }
+
+  const header = document.querySelector("header");
+  if (header) {
+    const toggleHeaderShadow = () => {
+      header.classList.toggle("shadow-lg", window.scrollY > 20);
+    };
+
+    toggleHeaderShadow();
+    window.addEventListener("scroll", toggleHeaderShadow, { passive: true });
+  }
 });
