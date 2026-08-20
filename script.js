@@ -128,4 +128,50 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleHeaderShadow();
     window.addEventListener("scroll", toggleHeaderShadow, { passive: true });
   }
+
+  const registrationForm = document.getElementById("registration-form");
+  const registrationMessage = document.getElementById("registration-message");
+
+  if (registrationForm && registrationMessage) {
+    registrationForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(registrationForm);
+      const age = Number(formData.get("age"));
+      const isCitizen = formData.get("citizen") === "yes";
+
+      registrationMessage.className = "mt-6 rounded-lg p-4";
+
+      if (!registrationForm.checkValidity() || age < 50 || !isCitizen) {
+        registrationMessage.classList.add("bg-error-container", "text-on-error-container");
+        registrationMessage.textContent = !isCitizen
+          ? "Registration is currently available only to citizens of Uganda."
+          : "You must be at least 50 years old to register.";
+        registrationMessage.focus();
+        return;
+      }
+
+      registrationMessage.classList.add("bg-secondary-fixed", "text-on-secondary-fixed");
+      registrationMessage.textContent = "Thank you. Your registration interest has been received.";
+      registrationForm.reset();
+    });
+  }
+
+  const paymentForm = document.getElementById("payment-form");
+  const paymentMessage = document.getElementById("payment-message");
+
+  if (paymentForm && paymentMessage) {
+    paymentForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!paymentForm.checkValidity()) {
+        paymentForm.reportValidity();
+        return;
+      }
+
+      paymentMessage.className = "mt-6 rounded-lg p-4 bg-secondary-fixed text-on-secondary-fixed";
+      paymentMessage.textContent = "Thank you. Your payment confirmation has been received for verification.";
+      paymentMessage.focus();
+      paymentForm.reset();
+    });
+  }
 });
