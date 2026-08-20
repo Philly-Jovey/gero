@@ -35,6 +35,21 @@
     text-wrap: balance;
 }
 
+#mobile-menu a[aria-current="page"] {
+    color: #8e4e14;
+    font-weight: 700;
+    border-bottom: 2px solid #8e4e14;
+}
+
+@media (max-width: 767px) {
+    #mobile-menu a[aria-current="page"] {
+        border-bottom: 0;
+        border-left: 4px solid #8e4e14;
+        padding-left: 12px;
+        background-color: rgba(255, 171, 105, 0.18);
+    }
+}
+
 .hero-background,
 .avatar-1,
 .avatar-2,
