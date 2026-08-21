@@ -66,6 +66,7 @@
 
 .hero-background {
     background-image: url('Images/Group photo.jpeg');
+    filter: brightness(0.9) contrast(1.12) saturate(1.08);
 }
 
 .avatar-1 {
@@ -99,3 +100,20 @@
 .urban-farming-image {
     background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHDxhijJUevlQVa9jWh_FcSPqTdIWd5TCRdCzoMu533ypeB_7OlH55XvSbHkocRpC2gd8Bg0HgltmzvqbvVlnint3hieJXcorxnZlWrdsV8fP24Ar7BXSEL50GGsRMlbhJqBXE1ij3kjp_Behez21EDzYHSMP-q_ItDSJZ2fCwosvohu-cOidNPa4Kb311A_3DYFV26fn9dAl0BaTgB-lbV8He3GITpU0086OB8uwcYtjosw_1uBOmneTIqnAup2XMYr4ijQ_GThM');
 }
+
+/* Admin console */
+.admin-shell { min-height: 100vh; background: #eef2f1; color: #191c1d; }
+.admin-sidebar { background: #002734; color: #fff; }
+.admin-sidebar a, .admin-sidebar button { transition: background-color .2s ease, color .2s ease; }
+.admin-sidebar a:hover, .admin-sidebar a[aria-current="page"] { background: rgba(255,255,255,.12); color: #ffb780; }
+.admin-card { background: #fff; border: 1px solid #d9dadb; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,39,52,.06); }
+.admin-input { width: 100%; border: 1px solid #b8c1c4; border-radius: 6px; padding: 11px 12px; background: #fff; color: #191c1d; }
+.admin-input:focus { outline: 3px solid rgba(142,78,20,.2); border-color: #8e4e14; }
+.admin-button { border-radius: 6px; padding: 10px 16px; font-weight: 700; transition: transform .2s ease, opacity .2s ease; }
+.admin-button:hover { transform: translateY(-1px); }
+.admin-nav-link:hover { opacity: .88; }
+.admin-page-frame { width: 100%; height: 680px; border: 1px solid #b8c1c4; border-radius: 6px; background: #fff; }
+.admin-button-primary { background: #8e4e14; color: #fff; }
+.admin-button-secondary { background: #e7e8e9; color: #002734; }
+.admin-badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 9px; font-size: 12px; font-weight: 700; }
+@media (max-width: 767px) { .admin-sidebar { position: static; } }

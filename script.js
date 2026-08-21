@@ -88,7 +88,34 @@ tailwind.config = {
   }
 };
 
+function applyAdminContent() {
+  try {
+    const state = JSON.parse(localStorage.getItem("gadr-admin-state") || "{}");
+    document.querySelectorAll("[data-admin-key]").forEach((element) => {
+      const value = state.content && state.content[element.dataset.adminKey];
+      if (value) element.textContent = value;
+    });
+    document.querySelectorAll("[data-admin-image]").forEach((element) => {
+      const value = state.images && state.images[element.dataset.adminImage];
+      if (value) element.style.backgroundImage = `url("${value}")`;
+    });
+  } catch (error) {
+  }
+}
+
+function applySavedPage() {
+  const pageKey = window.location.pathname.split("/").pop() || "index.html";
+  if (pageKey === "admin.html") return;
+  try {
+    const state = JSON.parse(localStorage.getItem("gadr-admin-state") || "{}");
+    if (state.pages && state.pages[pageKey]) document.body.innerHTML = state.pages[pageKey];
+  } catch (error) {
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  applySavedPage();
+  applyAdminContent();
   const observerOptions = {
     threshold: 0.1
   };
